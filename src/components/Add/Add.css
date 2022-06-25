@@ -1,0 +1,16 @@
+.add_box {
+  padding-top: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.add_name {
+  padding: 22px;
+  width: 300px;
+}
+
+.css-1wc848c-MuiFormHelperText-root {
+  margin-bottom: 20px !important;
+}

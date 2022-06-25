@@ -7,31 +7,50 @@ const Edit = () => {
   const { id } = useParams();
   const navigate = useNavigate();
   const { getOneTodo, oneTodo, updateTodo } = useContext(todoContext);
-  const [todo, setTodo] = useState("");
+  const [name, setName] = useState("");
+  const [phone, setPhone] = useState("");
+  const [email, setEmail] = useState("");
   useEffect(() => {
     getOneTodo(id);
   }, []);
   useEffect(() => {
     if (oneTodo) {
-      setTodo(oneTodo.todo);
+      setName(oneTodo.name);
+      setPhone(oneTodo.phone);
+      setEmail(oneTodo.email);
     }
   }, [oneTodo]);
   function handleSave() {
     let editedTodo = {
-      todo,
+      name,
+      phone,
+      email,
     };
     updateTodo(id, editedTodo);
     navigate("/list");
     console.log(editedTodo);
   }
+
   return (
     <Container>
       {oneTodo ? (
         <Box>
           <TextField
-            value={todo}
-            onChange={e => setTodo(e.target.value)}
-            label="Outlined"
+            value={name}
+            onChange={e => setName(e.target.value)}
+            label="NAME"
+            variant="outlined"
+          />
+          <TextField
+            value={phone}
+            onChange={e => setPhone(e.target.value)}
+            label="PHONE"
+            variant="outlined"
+          />
+          <TextField
+            value={email}
+            onChange={e => setEmail(e.target.value)}
+            label="EMAIL"
             variant="outlined"
           />
           <Button onClick={handleSave} variant="outlined">

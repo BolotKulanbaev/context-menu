@@ -1,20 +1,22 @@
 {
   "todos": [
     {
-      "todo": "blonddd",
+      "name": "bolot",
+      "phone": "k",
+      "email": "123",
       "id": 1
     },
     {
-      "todo": "wdwdwdw",
+      "name": "asd",
+      "phone": "ads",
+      "email": "ads",
+      "id": 2
+    },
+    {
+      "name": "bolot",
+      "phone": "bloto",
+      "email": "boloto",
       "id": 3
-    },
-    {
-      "todo": "wdwdwdw",
-      "id": 4
-    },
-    {
-      "todo": "beauty",
-      "id": 5
     }
   ]
 }

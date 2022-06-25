@@ -1,3 +1,4 @@
+import { Button } from "@mui/material";
 import React, { useContext, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { todoContext } from "../../contexts/todoContext";
@@ -20,11 +21,16 @@ const List = () => {
       {todos.map(item => (
         <div key={item.id}>
           <div>{item.name}</div>
-          <div>{item.phone}</div>
-          <div>{item.email}</div>
+          {/* <div>{item.phone}</div>
+          <div>{item.email}</div> */}
 
-          <button onClick={() => deleteTodo(item.id)}>Delete</button>
-          <button onClick={() => navigate(`/edit/${item.id}`)}>Edit</button>
+          {/* <button onClick={() => deleteTodo(item.id)}>Delete</button> */}
+          {/* <button onClick={() => navigate(`/edit/${item.id}`)}>Details</button> */}
+          <Button
+            onClick={() => navigate(`/edit/${item.id}`)}
+            variant="contained">
+            Details
+          </Button>
         </div>
       ))}
     </div>
