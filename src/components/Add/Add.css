@@ -4,6 +4,10 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  height: 100vh;
+  background-image: url(https://images.pexels.com/photos/7078716/pexels-photo-7078716.jpeg?auto=compress&cs=tinysrgb&w=600);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .add_name {

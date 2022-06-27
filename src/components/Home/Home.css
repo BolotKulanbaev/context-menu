@@ -1,0 +1,25 @@
+.home-names {
+  margin: 10px 0;
+  font-size: 20px;
+  cursor: pointer;
+  text-transform: uppercase;
+  opacity: 0.9;
+  font-weight: 700;
+  transition: 0.2s;
+}
+
+.home-names:hover {
+  background-color: aqua;
+  font-size: 25px;
+}
+
+.home {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+  background-image: url(https://images.pexels.com/photos/235985/pexels-photo-235985.jpeg?auto=compress&cs=tinysrgb&w=600);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
